@@ -22,7 +22,7 @@ import gsap from 'gsap';
 
 
 const About = () => {
-  const text = "Evan Stefanus Candra"
+  const text = "Ridwan"
   const view = useRef(null)
   const scrollView = useInView(view, {
     margin : '-100px 0px'
@@ -38,8 +38,8 @@ const About = () => {
           <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:1}}} className='md:mx-32 md:w-40 md:h-40 xl:ml-60 xl:w-[45%] xl:h-[23%] bg-slate-500 rounded-2xl animate-spin-slow text-slate-500 px-1'></motion.div>
         </div>
         <div className='md:w-1/3 lg:w-1/2'>
-          <motion.h1 initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.2}} className='text-2xl font-extrabold'>Holla i am {text.split("").map((kata,i) => <motion.span key={i} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:3,repeat:Infinity,delay:i * 0.03}}>{kata}</motion.span>)}</motion.h1>
-          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills graphically. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with JavaScript,PHP language and ExpressJS, NestJs, NodeJS, Laravel and etc. Beside coding, in my boredom i also play first person shooting games</motion.p>
+          <motion.h1 initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.2}} className='text-2xl font-extrabold'>Hello i am {text.split("").map((kata,i) => <motion.span key={i} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:3,repeat:Infinity,delay:i * 0.03}}>{kata}</motion.span>)}</motion.h1>
+          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with JavaScript,PHP language and ExpressJS, NestJs, NodeJS, Laravel and etc. Beside coding, in my boredom i also play first person shooting games</motion.p>
           <motion.i initial={{x:50,opacity:0}} animate={{x:0,opacity:1}}>{quotes.split("").map((text,i) => <motion.span key={i} initial={{opacity:0}} animate={{opacity:1,transition:{delay:i * 0.07}}} transition={{repeat:0}} >{text}</motion.span>)}</motion.i>
 
           <motion.h1 initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:1.8}}} className='mt-28 text-2xl font-extrabold mb-6'>Programming Language and etc.</motion.h1>
